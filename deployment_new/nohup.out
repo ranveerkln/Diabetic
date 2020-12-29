@@ -1,0 +1,343 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+157.33.105.38 - - [29/Dec/2020 09:52:05] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:52:05] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 09:52:09] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:53:58] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:53:58] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 09:54:03] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:54:42] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:54:43] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 09:54:48] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:55:32] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 09:55:32] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 10:02:10] "[37mGET /index HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+157.33.105.38 - - [29/Dec/2020 10:14:52] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:14:52] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 10:14:59] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:15:05] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:18:10] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:18:11] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+157.33.105.38 - - [29/Dec/2020 10:29:31] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:29:31] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 10:29:36] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:29:57] "[37mGET / HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:30:02] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:30:03] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 10:30:07] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:30:28] "[37mGET / HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:30:35] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 10:30:35] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+157.33.105.38 - - [29/Dec/2020 11:46:03] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+157.33.105.38 - - [29/Dec/2020 11:46:10] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:46:10] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:46:13] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:46:19] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+157.33.105.38 - - [29/Dec/2020 11:46:30] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:46:30] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:46:33] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:08] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:08] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:47:12] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:25] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:26] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:47:29] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:36] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:47:37] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+encounter_id                 int64
+patient_nbr                  int64
+race                        object
+gender                      object
+age                         object
+weight                       int64
+admission_type_id           object
+discharge_disposition_id    object
+admission_source_id         object
+time_in_hospital            object
+payer_code                   int64
+medical_specialty           object
+num_lab_procedures          object
+num_procedures              object
+num_medications             object
+number_outpatient           object
+number_emergency            object
+number_inpatient            object
+diag_1                      object
+diag_2                      object
+diag_3                      object
+number_diagnoses            object
+max_glu_serum               object
+A1Cresult                   object
+metformin                   object
+repaglinide                 object
+nateglinide                 object
+chlorpropamide              object
+glimepiride                  int64
+acetohexamide                int64
+glipizide                   object
+glyburide                   object
+tolbutamide                  int64
+pioglitazone                 int64
+rosiglitazone                int64
+acarbose                     int64
+miglitol                     int64
+troglitazone                 int64
+tolazamide                  object
+examide                      int64
+citoglipton                  int64
+insulin                     object
+glyburide-metformin          int64
+glipizide-metformin          int64
+glimepiride-pioglitazone     int64
+metformin-rosiglitazone      int64
+metformin-pioglitazone       int64
+change                      object
+diabetesMed                 object
+readmitted                   int64
+dtype: object
+#### DONE TILL HERE #### 
+[0] <class 'numpy.ndarray'>
+encounter_id                 int64
+patient_nbr                  int64
+race                        object
+gender                      object
+age                         object
+weight                       int64
+admission_type_id           object
+discharge_disposition_id    object
+admission_source_id         object
+time_in_hospital            object
+payer_code                   int64
+medical_specialty           object
+num_lab_procedures          object
+num_procedures              object
+num_medications             object
+number_outpatient           object
+number_emergency            object
+number_inpatient            object
+diag_1                      object
+diag_2                      object
+diag_3                      object
+number_diagnoses            object
+max_glu_serum               object
+A1Cresult                   object
+metformin                   object
+repaglinide                 object
+nateglinide                 object
+chlorpropamide              object
+glimepiride                  int64
+acetohexamide                int64
+glipizide                   object
+glyburide                   object
+tolbutamide                  int64
+pioglitazone                 int64
+rosiglitazone                int64
+acarbose                     int64
+miglitol                     int64
+troglitazone                 int64
+tolazamide                  object
+examide                      int64
+citoglipton                  int64
+insulin                     object
+glyburide-metformin          int64
+glipizide-metformin          int64
+glimepiride-pioglitazone     int64
+metformin-rosiglitazone      int64
+metformin-pioglitazone       int64
+change                      object
+diabetesMed                 object
+readmitted                   int64
+dtype: object
+#### DONE TILL HERE #### 
+[0] <class 'numpy.ndarray'>
+encounter_id                 int64
+patient_nbr                  int64
+race                        object
+gender                      object
+age                         object
+weight                       int64
+admission_type_id           object
+discharge_disposition_id    object
+admission_source_id         object
+time_in_hospital            object
+payer_code                   int64
+medical_specialty           object
+num_lab_procedures          object
+num_procedures              object
+num_medications             object
+number_outpatient           object
+number_emergency            object
+number_inpatient            object
+diag_1                      object
+diag_2                      object
+diag_3                      object
+number_diagnoses            object
+max_glu_serum               object
+A1Cresult                   object
+metformin                   object
+repaglinide                 object
+nateglinide                 object
+chlorpropamide              object
+glimepiride                  int64
+acetohexamide                int64
+glipizide                   object
+glyburide                   object
+tolbutamide                  int64
+pioglitazone                 int64
+rosiglitazone                int64
+acarbose                     int64
+miglitol                     int64
+troglitazone                 int64
+tolazamide                  object
+examide                      int64
+citoglipton                  int64
+insulin                     object
+glyburide-metformin          int64
+glipizide-metformin          int64
+glimepiride-pioglitazone     int64
+metformin-rosiglitazone      int64
+metformin-pioglitazone       int64
+change                      object
+diabetesMed                 object
+readmitted                   int64
+dtype: object
+#### DONE TILL HERE #### 
+[0] <class 'numpy.ndarray'>
+encounter_id                 int64
+patient_nbr                  int64
+race                        object
+gender                      object
+age                         object
+weight                       int64
+admission_type_id           object
+discharge_disposition_id    object
+admission_source_id         object
+time_in_hospital            object
+payer_code                   int64
+medical_specialty           object
+num_lab_procedures          object
+num_procedures              object
+num_medications             object
+number_outpatient           object
+number_emergency            object
+number_inpatient            object
+diag_1                      object
+diag_2                      object
+diag_3                      object
+number_diagnoses            object
+max_glu_serum               object
+A1Cresult                   object
+metformin                   object
+repaglinide                 object
+nateglinide                 object
+chlorpropamide              object
+glimepiride                  int64
+acetohexamide                int64
+glipizide                   object
+glyburide                   object
+tolbutamide                  int64
+pioglitazone                 int64
+rosiglitazone                int64
+acarbose                     int64
+miglitol                     int64
+troglitazone                 int64
+tolazamide                  object
+examide                      int64
+citoglipton                  int64
+insulin                     object
+glyburide-metformin          int64
+glipizide-metformin          int64
+glimepiride-pioglitazone     int64
+metformin-rosiglitazone      int64
+metformin-pioglitazone       int64
+change                      object
+diabetesMed                 object
+readmitted                   int64
+dtype: object
+#### DONE TILL HERE #### 
+[0] <class 'numpy.ndarray'>
+encounter_id                 int64
+patient_nbr                  int64
+race                        object
+gender                      object
+age                         object
+weight                       int64
+admission_type_id           object
+discharge_disposition_id    object
+admission_source_id         object
+time_in_hospital            object
+payer_code                   int64
+medical_specialty           object
+num_lab_procedures          object
+num_procedures              object
+num_medications             object
+number_outpatient           object
+number_emergency            object
+number_inpatient            object
+diag_1                      object
+diag_2                      object
+diag_3                      object
+number_diagnoses            object
+max_glu_serum               object
+A1Cresult                   object
+metformin                   object
+repaglinide                 object
+nateglinide                 object
+chlorpropamide              object
+glimepiride                  int64
+acetohexamide                int64
+glipizide                   object
+glyburide                   object
+tolbutamide                  int64
+pioglitazone                 int64
+rosiglitazone                int64
+acarbose                     int64
+miglitol                     int64
+troglitazone                 int64
+tolazamide                  object
+examide                      int64
+citoglipton                  int64
+insulin                     object
+glyburide-metformin          int64
+glipizide-metformin          int64
+glimepiride-pioglitazone     int64
+metformin-rosiglitazone      int64
+metformin-pioglitazone       int64
+change                      object
+diabetesMed                 object
+readmitted                   int64
+dtype: object157.33.105.38 - - [29/Dec/2020 11:47:40] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:48:19] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:48:19] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:48:23] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:50:34] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:50:35] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:50:37] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:52:39] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:52:40] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:52:41] "[37mPOST /predict HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:52:46] "[37mGET /index HTTP/1.1[0m" 200 -
+157.33.105.38 - - [29/Dec/2020 11:52:47] "[33mGET /bg1.jpg HTTP/1.1[0m" 404 -
+157.33.105.38 - - [29/Dec/2020 11:52:50] "[37mPOST /predict HTTP/1.1[0m" 200 -

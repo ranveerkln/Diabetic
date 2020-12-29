@@ -1,0 +1,299 @@
+<!doctype html>
+
+<html>
+<head>
+	<style>	
+ 		.heading { 
+                font-size: 40px; 
+                color: blue; 
+                font-weight: bold;
+                margin-left: 500px; 
+                font-family: 'Montserrat';
+            } 
+        body {
+  			background-image: url("bg1.jpg");
+  			background-color: #A9CCE3;
+  			background-size :cover;
+  			margin-top:40px;
+  			font-family:sans-serif;
+
+		}
+    </style>
+
+</head>
+<body>
+    <h3 class = 'heading' >Dibetis Readmision Prediction</h3>
+
+<div class = 'name'>
+
+  <form action="/predict" method="POST">
+  	<label for = 'gender' style = "font-size:28px;"> Enter Gender : </label>
+  	<select name="gender"  style = "width:90px; height:35px;color:#FF0000;">
+    	<option value="Male" selected>Male</option>
+    	<option value="Female">Female</option>
+  	</select>
+  	
+
+  	<label for = 'age' style = "font-size:28px; margin-left: 200px;"> Choose Age Group : </label>
+  	<select name = 'age' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = '[0-10)' selected> [0-10)</option>
+   		<option value = '[10-20)'> [10-20)</option>
+   		<option value = '[20-30)'> [20-30)</option>
+  		<option value = '[30-40)'> [30-40)</option>
+  		<option value = '[40-50)'> [40-50)</option>
+  		<option value = '[50-60)'> [50-60)</option>
+  		<option value = '[60-70)'> [60-70)</option>
+  		<option value = '[70-80)'> [70-80)</option>
+  		<option value = '[80-90)'> [80-90)</option>
+  		<option value = '[90-100)'> [90-100)'</option>
+  	</select>
+
+  	<label for = "admission_type_id" style = "font-size:28px; margin-left: 250px;" > Admission Type ID </label>
+  	<input type = "number" max = "8" min = "1"  value = "3" name = "admission_type_id" placeholder = "1" style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<br> <br> <br> <br>
+
+  	<label for = 'discharge_disposition_id' style = "font-size:28px; " > Discharge Disposition ID </label>
+  	<input type = "number" max = "28" min = "1" value = "3" placeholder = "1" name = "discharge_disposition_id" style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<label for = 'admission_source_id' style = "font-size:28px;margin-left: 70px;" > Admission Source ID </label>
+  	<input type = "number" max = "25" min = "1" value = "4" placeholder = "1" name = "admission_source_id" style = "width:90px; height:35px;color:#FF0000;"> 
+
+   	<label for = 'time_in_hospital' style = "font-size:28px;margin-left: 230px;" > Time In Hospital </label>
+  	<input type = "number" placeholder = "1" value = "2" name = "time_in_hospital" style = "width:90px; height:35px;color:#FF0000;"> 
+
+  <br> <br> <br> <br>
+
+  	<label for = 'medical_specialty' style = "font-size:28px;"> Medical Specialty : </label>
+  	<select name = 'medical_specialty' style = "width:90px; height:35px;color:#FF0000;">
+<option value = 'Podiatry' selected> Podiatry</option>
+<option value = 'Pediatrics-Hematology-Oncology'> Pediatrics-Hematology-Oncology</option>
+<option value = 'DCPTEAM'> DCPTEAM</option>
+<option value = '?'> ?</option>
+<option value = 'InfectiousDiseases'> InfectiousDiseases</option>
+<option value = 'Surgery-PlasticwithinHeadandNeck'> Surgery-PlasticwithinHeadandNeck</option>
+<option value = 'Radiologist'> Radiologist</option>
+<option value = 'Pediatrics-EmergencyMedicine'> Pediatrics-EmergencyMedicine</option>
+<option value = 'Surgery-Cardiovascular'> Surgery-Cardiovascular</option>
+<option value = 'Anesthesiology-Pediatric'> Anesthesiology-Pediatric</option>
+<option value = 'Gastroenterology'> Gastroenterology</option>
+<option value = 'Urology'> Urology</option>
+<option value = 'Psychiatry'> Psychiatry</option>
+<option value = 'Pediatrics-CriticalCare'> Pediatrics-CriticalCare</option>
+<option value = 'Dentistry'> Dentistry</option>
+<option value = 'Dermatology'> Dermatology</option>
+<option value = 'Proctology'> Proctology</option>
+<option value = 'ObstetricsandGynecology'> ObstetricsandGynecology</option>
+<option value = 'Psychiatry-Child/Adolescent'> Psychiatry-Child/Adolescent</option>
+<option value = 'Nephrology'> Nephrology</option>
+<option value = 'Pediatrics-Pulmonology'> Pediatrics-Pulmonology</option>
+<option value = 'Emergency/Trauma'> Emergency/Trauma</option>
+<option value = 'Obsterics&Gynecology-GynecologicOnco'> Obsterics&Gynecology-GynecologicOnco</option>
+<option value = 'Surgery-Thoracic'> Surgery-Thoracic</option>
+<option value = 'Rheumatology'> Rheumatology</option>
+<option value = 'Pediatrics-InfectiousDiseases'> Pediatrics-InfectiousDiseases</option>
+<option value = 'Surgery-Neuro'> Surgery-Neuro</option>
+<option value = 'Endocrinology'> Endocrinology</option>
+<option value = 'Psychology'> Psychology</option>
+<option value = 'PhysicianNotFound'> PhysicianNotFound</option>
+<option value = 'Neurophysiology'> Neurophysiology</option>
+<option value = 'Ophthalmology'> Ophthalmology</option>
+<option value = 'Surgery-Cardiovascular/Thoracic'> Surgery-Cardiovascular/Thoracic</option>
+<option value = 'Surgery-Plastic'> Surgery-Plastic</option>
+<option value = 'InternalMedicine'> InternalMedicine</option>
+<option value = 'Perinatology'> Perinatology</option>
+<option value = 'PhysicalMedicineandRehabilitation'> PhysicalMedicineandRehabilitation</option>
+<option value = 'Pediatrics'> Pediatrics</option>
+<option value = 'Oncology'> Oncology</option>
+<option value = 'Pediatrics-Neurology'> Pediatrics-Neurology</option>
+<option value = 'Surgery-Maxillofacial'> Surgery-Maxillofacial</option>
+<option value = 'OutreachServices'> OutreachServices</option>
+<option value = 'Pediatrics-Endocrinology'> Pediatrics-Endocrinology</option>
+<option value = 'Pulmonology'> Pulmonology</option>
+<option value = 'Surgery-Colon&Rectal'> Surgery-Colon&Rectal</option>
+<option value = 'Orthopedics-Reconstructive'> Orthopedics-Reconstructive</option>
+<option value = 'Neurology'> Neurology</option>
+<option value = 'Hematology/Oncology'> Hematology/Oncology</option>
+<option value = 'Family/GeneralPractice'> Family/GeneralPractice</option>
+<option value = 'AllergyandImmunology'> AllergyandImmunology</option>
+<option value = 'Obstetrics'> Obstetrics</option>
+<option value = 'Hematology'> Hematology</option>
+<option value = 'Resident'> Resident</option>
+<option value = 'SportsMedicine'> SportsMedicine</option>
+<option value = 'Gynecology'> Gynecology</option>
+<option value = 'SurgicalSpecialty'> SurgicalSpecialty</option>
+<option value = 'Speech'> Speech</option>
+<option value = 'Psychiatry-Addictive'> Psychiatry-Addictive</option>
+<option value = 'Surgery-Pediatric'> Surgery-Pediatric</option>
+<option value = 'Otolaryngology'> Otolaryngology</option>
+<option value = 'Pediatrics-AllergyandImmunology'> Pediatrics-AllergyandImmunology</option>
+<option value = 'Hospitalist'> Hospitalist</option>
+<option value = 'Surgery-Vascular'> Surgery-Vascular</option>
+<option value = 'Anesthesiology'> Anesthesiology</option>
+<option value = 'Radiology'> Radiology</option>
+<option value = 'Osteopath'> Osteopath</option>
+<option value = 'Surgery-General'> Surgery-General</option>
+<option value = 'Pathology'> Pathology</option>
+<option value = 'Orthopedics'> Orthopedics</option>
+<option value = 'Surgeon'> Surgeon</option>
+<option value = 'Endocrinology-Metabolism'> Endocrinology-Metabolism</option>
+<option value = 'Cardiology'> Cardiology</option>
+<option value = 'Cardiology-Pediatric'> Cardiology-Pediatric</option>
+</select>
+
+  	<label for = 'num_lab_procedures' style = "font-size:28px;margin-left: 150px;" > Num Lab Procedures </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'num_lab_procedures' style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<label for = 'num_procedures' style = "font-size:28px;margin-left: 230px;" > Num Procedures </label>
+  	<input type = "number" placeholder = "1" value = "2" name = 'num_procedures' style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<br><br> <br> <br> <br>
+
+  	<label for = 'num_medications' style = "font-size:28px;;" > Num Medications </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'num_medications' style = "width:90px; height:35px;color:#FF0000;">  
+
+  	<label for = 'number_outpatient' style = "font-size:28px;margin-left: 165px;" > Number Outpatient </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'number_outpatient' style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<label for = 'number_emergency' style = "font-size:28px;margin-left: 245px;" > Number Emergency </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'number_emergency' style = "width:90px; height:35px;color:#FF0000;">  
+
+ 	<br><br> <br> <br> <br>
+
+  	<label for = 'number_inpatient' style = "font-size:28px;;" > Number Inpatient </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'number_inpatient' style = "width:90px; height:35px;color:#FF0000;">  
+
+   	<label for = 'diag_1' style = "font-size:28px;margin-left: 170px;" > Diag 1 </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'diag_1' style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<label for = 'diag_2' style = "font-size:28px;margin-left: 400px;" > Diag 2 </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'diag_2' style = "width:90px; height:35px;color:#FF0000;"> 
+
+ 	<br><br> <br> <br> <br>
+
+  	<label for = 'diag_3' style = "font-size:28px;;" > Diag 3 </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'diag_3' style = "width:90px; height:35px;color:#FF0000;">  
+
+   	<label for = 'number_diagnoses' style = "font-size:28px;margin-left: 305px;" > Number Diagnoses </label>
+  	<input type = "number" placeholder = "1" value = "1" name = 'number_diagnoses' style = "width:90px; height:35px;color:#FF0000;"> 
+
+  	<label for = 'max_glu_serum' style = "font-size:28px;margin-left: 245px;" > Max Glu Serum </label>
+  	<select name = 'max_glu_serum' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = '>200' selected> >200</option>
+   		<option value = '>300'>  >300</option>
+   		<option value = 'Norm'> Norm</option>
+  		<option value = 'None'> None</option>
+  	</select>
+
+	<br><br> <br> <br> <br>
+
+  	<label for = 'A1Cresult' style = "font-size:28px;;" > Diag 3 </label>
+  	<select name = 'A1Cresult' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = '>7' selected> >7</option>
+   		<option value = '>8'>  >8 </option>
+   		<option value = 'Norm'> Norm</option>
+  		<option value = 'None'> None</option> 
+  	</select>
+ 
+  	<label for = 'repaglinide' style = "font-size:28px;margin-left: 300px;" > Repaglinide </label>
+  	<select name = 'repaglinide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<label for = 'metformin' style = "font-size:28px;margin-left: 340px;" > Metformin </label>
+  	<select name = 'metformin' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<br> <br> <br> <br>
+
+  	<label for = 'nateglinide' style = "font-size:28px;" > Nateglinide </label>
+  	<select name = 'nateglinide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<label for = 'chlorpropamide' style = "font-size:28px;margin-left: 230px;" > Chlorpropamide </label>
+  	<select name = 'chlorpropamide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<label for = 'glipizide' style = "font-size:28px;margin-left: 308px;" > Glipizide </label>
+  	<select name = 'glipizide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<br> <br> <br> <br>
+
+  	<label for = 'glyburide' style = "font-size:28px;" > Glyburide </label>
+  	<select name = 'glyburide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<label for = 'tolazamide' style = "font-size:28px;margin-left: 250px;" > Tolazamide</label>
+  	<select name = 'tolazamide' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<label for = "insulin" style = "font-size:28px;margin-left: 358px;"> Insulin </label>
+  	<select name = 'insulin' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Up' selected> Up </option>
+   		<option value = 'Down'>  Down </option>
+   		<option value = 'Steady'> Steady</option>
+  		<option value = 'No'> No </option>
+  	</select>
+
+  	<br> <br> <br> <br>
+
+  	<label for = 'change' style = "font-size:28px;" > Change </label>
+  	<select name = 'change' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'Ch' selected> Ch </option>
+   		<option value = 'No'>  No </option>
+  	</select>
+
+  	<label for = 'diabetesMed' style = "font-size:28px;margin-left: 270px;"> Diabetes Med</label>
+  	<select name = 'diabetesMed' style = "width:90px; height:35px;color:#FF0000;">
+  		<option value = 'No' selected> Up </option>
+   		<option value = 'Yes'>  Down </option>
+  	</select>
+
+  	<label for = "race" style = "font-size:28px;margin-left: 328px;"> Race </label>
+  	<select name = 'race' style = "width:150px; height:35px;color:#FF0000;">
+  		<option value = 'AfricanAmerican' selected=""> AfricanAmerican </option>
+  		<option value = '?' > ? </option>
+   		<option value = 'Other'>  Other </option>
+   		<option value = 'Caucasian'> Caucasian</option>
+  		<option value = 'AfricanAmerican'> AfricanAmerican </option>
+  		<option value = 'Asian'> Asian </option>
+  		<option value = 'Hispanic'> Hispanic </option>
+  	</select>
+
+	<br><br> <br> <br> <br>
+    <input type="submit" value="Submit For Prediction" style = "color : green; width:300px; height:45px;font-size:28px;margin-left: 550px;">
+  </form>
+  <br> <br> <br>
+</div>
+
+</body>
+</html>
+
